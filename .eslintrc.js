@@ -27,8 +27,6 @@ module.exports = {
     'plugins': [
         'import',
         'jsx-a11y',
-        'prefer-arrow',
-        'prettier',
         'react',
         'react-hooks',
         '@typescript-eslint',
@@ -59,6 +57,7 @@ module.exports = {
             },
         ],
         // 不使用の変数定義を禁止
+        'no-use-before-define': 'off',
         '@typescript-eslint/no-unused-vars': [
             'error',
             {
