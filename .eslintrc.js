@@ -32,6 +32,7 @@ module.exports = {
     'plugins': [
         'import',
         'jsx-a11y',
+        'prefer-arrow',
         'prettier',
         'react',
         'react-hooks',
@@ -83,6 +84,15 @@ module.exports = {
                 jsx: 'never',
                 ts: 'never',
                 tsx: 'never',
+            },
+        ],
+        // 関数定義をアロー関数式に統一
+        'prefer-arrow/prefer-arrow-functions': [
+            'error',
+            {
+                disallowPrototype: true,
+                singleReturnOnly: false,
+                classPropertiesAllowed: false,
             },
         ],
         // JSX のファイル拡張子を指定
