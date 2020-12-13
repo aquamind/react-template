@@ -1,0 +1,43 @@
+@import '../../properties.css';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  border-width: 0;
+  border-radius: var(--radius);
+  transition: opacity var(--hover-animation-duration) ease-out;
+}
+
+.button:hover {
+  opacity: var(--hover-feedback-opacity);
+}
+
+.button:disabled {
+  background-color: var(--color-gray-lt);
+}
+
+.default {
+  color: var(--color-gray);
+  background-color: inherit;
+  border: var(--border);
+}
+
+.primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.info {
+  color: var(--color-white);
+  background-color: var(--color-info);
+}
+
+.warning {
+  color: var(--color-white);
+  background-color: var(--color-warning);
+}
