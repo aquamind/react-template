@@ -9,4 +9,5 @@ export default {
   title: '<%= h.changeCase.pascal(stage) %>/<%= name %>',
 };
 
-export const Default = (): void => <<%= name %> />;
+export const Default = (): JSX.Element => <<%= name %> />;
+Default.storyName = 'デフォルト';
