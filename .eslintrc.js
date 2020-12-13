@@ -111,6 +111,19 @@ module.exports = {
                 explicitSpread: 'ignore',
             },
         ],
+        // devDependencies からの import を抑制
+        'import/no-extraneous-dependencies': [
+            'error',
+            {
+                devDependencies: ["**/*.stories.@(js|jsx|ts|tsx)"],
+                peerDependencies: false
+            }
+        ],
+        // enum の定義エラーを解消
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": [
+            "error"
+        ],
     },
     overrides: [
         {
