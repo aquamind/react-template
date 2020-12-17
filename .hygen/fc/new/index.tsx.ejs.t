@@ -13,7 +13,7 @@ export type Props = {
 };
 <% } -%>
 
-export const <%= name %>: FC<%- type_annotate %> = (<%= props %>) => (
+const <%= name %>: FC<%- type_annotate %> = (<%= props %>) => (
   <>
     //
   </>
