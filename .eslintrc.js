@@ -115,7 +115,10 @@ module.exports = {
         'import/no-extraneous-dependencies': [
             'error',
             {
-                devDependencies: ["**/*.stories.@(js|jsx|ts|tsx)"],
+                devDependencies: [
+                    "**/*.stories.@(js|jsx|ts|tsx)",
+                    "**/mocks/*.@(js|jsx|ts|tsx)"
+                ],
                 peerDependencies: false
             }
         ],
