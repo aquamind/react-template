@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-const App = (): JSX.Element => (
+const App: FC = () => (
   <Router>
     <div className="App">
       <Switch>
